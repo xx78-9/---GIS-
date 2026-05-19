@@ -1,0 +1,44 @@
+[
+  {
+    "文件": "shanghai_roads_std.geojson",
+    "目标": "tb_上海道路.geojson",
+    "记录数": 18814,
+    "模式": "本地文件",
+    "状态": "成功"
+  },
+  {
+    "文件": "shanghai_buildings_std.geojson",
+    "目标": "tb_上海建筑.geojson",
+    "记录数": 45202,
+    "模式": "本地文件",
+    "状态": "成功"
+  },
+  {
+    "文件": "shanghai_poi_std.geojson",
+    "目标": "tb_上海POI.geojson",
+    "记录数": 2537,
+    "模式": "本地文件",
+    "状态": "成功"
+  },
+  {
+    "文件": "corrupt_crs_std.geojson",
+    "目标": "tb_学校_已修复.geojson",
+    "记录数": 5,
+    "模式": "本地文件",
+    "状态": "成功"
+  },
+  {
+    "文件": "corrupt_geometry_std.geojson",
+    "目标": "tb_行政区_已修复.geojson",
+    "记录数": 7,
+    "模式": "本地文件",
+    "状态": "成功"
+  },
+  {
+    "文件": "corrupt_nulls_std.geojson",
+    "目标": "tb_道路_已修复.geojson",
+    "记录数": 20,
+    "模式": "本地文件",
+    "状态": "成功"
+  }
+]

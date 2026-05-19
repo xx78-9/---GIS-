@@ -1,0 +1,35 @@
+# === 大文件不传（数据文件夹） ===
+原始数据/
+处理中/
+成果数据/*.geojson
+成果数据/*.tif
+
+# === 保留的成果展示文件 ===
+# 成果展示/index.html 保留
+# 质检报告/*.json 保留
+# 质检报告/*.xlsx 保留
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# === 临时文件 ===
+*.tmp
+*.lock
+.DS_Store
+
+# === OSMnx缓存 ===
+cache/
+
+# === IDE ===
+.vscode/
+.idea/
+
+# === 压缩包 ===
+*.zip
+*.7z
+*.rar

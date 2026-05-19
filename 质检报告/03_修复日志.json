@@ -1,0 +1,62 @@
+[
+  {
+    "文件名": "corrupt_crs.geojson",
+    "原始要素数": 5,
+    "处理记录": [
+      "填充NULL: name(1)",
+      "坐标系转换: EPSG:4214 -> EPSG:4326"
+    ],
+    "输出文件": "corrupt_crs_std.geojson",
+    "输出要素数": 5
+  },
+  {
+    "文件名": "corrupt_geometry.geojson",
+    "原始要素数": 7,
+    "处理记录": [
+      "修复无效几何：1个"
+    ],
+    "输出文件": "corrupt_geometry_std.geojson",
+    "输出要素数": 7
+  },
+  {
+    "文件名": "corrupt_nulls.geojson",
+    "原始要素数": 20,
+    "处理记录": [
+      "填充NULL: road_name(7), road_type(5), 车道数(4)"
+    ],
+    "输出文件": "corrupt_nulls_std.geojson",
+    "输出要素数": 20
+  },
+  {
+    "文件名": "shanghai_buildings.geojson",
+    "原始要素数": 45202,
+    "处理记录": [
+      "填充NULL: name(41972), name:zh(44740), name:zh-Hans(44985), name:zh-Hant(44984), note(45144), amenity(44747), name:en(44470), addr:housename(45190), addr:postcode(45042), addr:street(43774), network(45186), public_transport(45176), railway(45184), station(45185), subway(45185), wheelchair(45134), addr:housenumber(43638), building:levels(41279), heritage(44885), heritage:operator(44916), heritage:ref(44919), old_name(45021), ref(45167), addr:country(45189), ref:zh(45201), start_date(44920), addr:city(44756), addr:province(44501), description(45189), military(45191), source(43326), tourism(45005), addr:district(44482), alt_name:ja(45200), building:material(45182), building:use(45196), check_date(45189), height(44836), name:ar(45198), name:es(45197), name:fr(45181), name:hi(45197), name:ja(45197), name:ja-Hira(45199), name:ko(45189), name:ru(45178), name:th(45198), name:vi(45198), name:wuu(45201), name:yue(45198), name:zh-Latn-pinyin(45188), short_name(45194), website(45153), wikidata(45075), wikimedia_commons(45142), wikipedia(45103), brand(45102), brand:en(45137), brand:wikidata(45115), brand:wikipedia(45169), brand:zh(45137), historic(45179), addr:street:en(45174), built(45199), use(45201), landuse(45192), check_date:opening_hours(45201), consulate(45198), country(45198), diplomatic(45197), office(45025), opening_hours:signed(45201), target(45199), leisure(45137), sport(45182), layer(44916), maxspeed(45201), name:de(45192), train(45201), architect(45195), architect:wikidata(45200), phone(45166), fee(45194), opening_hours(45154), museum(45192), communication:radio(45201), communication:television(45201), man_made(45181), name:pt(45198), official_name(45196), operational_status(45198), tourism:level:CN(45200), tower:type(45197), wikipedia:en(45200), contact:instagram(45199), shop(44993), alt_name:en(45194), covered(45185), bridge(45199), old_name:en(45191), internet_access(45183), alt_name(45170), name:uk(45200), roof:shape(44738), smoking(45166), rooms(45191), area(45197), network:en(45201), network:wikidata(45201), network:zh(45201), int_name(45162), building:colour(45109), min_height(45198), roof:colour(44803), emergency(45199), healthcare(45185), roof:levels(45120), cuisine(45187), diet:chicken(45201), diet:fish(45201), diet:healthy(45201), diet:local(45200), diet:meat(45199), building:levels:underground(45179), religion(45164), theatre:type(45201), denomination(45196), service_times(45200), studio(45198), internet_access:fee(45189), operator(45170), contact:bilibili(45201), contact:phone(45196), contact:tiktok(45201), contact:twitter(45200), contact:weibo(45201), contact:youtube(45201), toilets:wheelchair(45198), website:en(45200), bus(45197), image(45200), name:bn(45200), name:id(45201), name:ml(45201), name:tr(45201), addr:housename:en(45201), parking(45196), source:name(45201), addr:housenumber:en(45200), power(45191), alt_name:zh(45201), length(45201), width(45201), air_conditioning(45198), stars(45190), contact:email(45201), contact:website(45200), ferry(45197), museum_type(45201), toilets(45198), charge(45201), name:he(45201), level(45194), location(45195), payment:alipay(45200), payment:american_express(45201), payment:apple_pay(45201), payment:cash(45201), payment:credit_cards(45201), payment:discover_card(45201), payment:huawei_pay(45201), payment:mastercard(45201), payment:mipay(45201), payment:samsung_pay(45201), payment:unionpay(45201), payment:visa(45201), aeroway(45201), disused(45200), disused:aeroway(45201), roof:orientation(45197), cinema:cinity(45201), cinema:dolby_atmos(45200), cinema:dolby_cinema(45201), cinema:onyx(45201), cinema:realD(45201), dsscreated(45201), screen(45200), access(45181), internet_access:ssid(45200), addr:city:en(45201), email(45200), fax(45197), education(45201), frequency(45201), substation(45199), capacity:disabled(45201), atm(45198), community_centre(45190), government(45189), construction:leisure(45201), opening_date(45199), short_name:en(45201), construction(45201), nohousenumber(45201), roof:direction(45189), roof:height(45171), roof:material(45194), website:zh(45201), elevator(45201), colour(45201), fast_food(45199), attraction(45201), female(45193), male(45193), toilets:disposal(45190), theatre(45200), social_facility(45195), social_facility:for(45195), name:yue-Hant(45201), school(45201), bench(45194), shelter_type(45185), name:it(45201), name:zh-Hans-CN(45200), name:zh-Hant-CN(45200), swimming_pool(45201), wall(45198), shop_1(45201), shop_2(45201), ele(45105), wikipedia:zh(45200), tower(45201), building:part(45200), old_name:fr(45200), source:architect(45201), source:heritage:ref(45201), was:building:levels(45201), boundary(45201), protect_class(45201), building:min_level(45197), relation(45201), alt_name:de(45201), alt_name:fr(45201), alt_name:nl(45201), name:nl(45201), fixme(45199), club(45201), library(45201), addr:alley(45198), drive_through(45200), bath:open_air(45201), fuel:octane_92(45198), fuel:octane_95(45198), fuel:octane_98(45200), building:flats(45184), indoor(45201), not:name(45201), building_1(45200), temporary(45196), old_name_1(45201), contact:wechat(45201), was:building(45200), generator:source(45200), addr:suburb(45201), industrial(45201), bar(45201), reservation(45201), operator:type(45198), payment:wechat(45200), abandoned(45197), bicycle_parking(45198), operator:en(45201), operator:zh(45201), access:covid19(45201), not:brand:wikidata(45201), disused:shop(45200), internet_access:password(45201), changing_table(45199), unisex(45201), ruins(45201), residential(45199), university(45199), townhall:type(45201), depot(45201), name:ms(45201), cinema:3D(45201), takeaway(45199), old_name:1952-2018(45201), was:amenity(45200), fuel:diesel(45201), self_service(45201), information(45200), outdoor_seating(45201), service:vehicle:car_repair(45201), service:vehicle:new_car_sales(45201), bin(45201), addr:flats(45201), second_hand(45201), addr:unit(45196), addr:floor(45201), was:ferry(45201), was:public_transport(45201), lit(45200), admin_level(45201), construction_date(45198), voltage(45201), type(44823), entrance(45201), source_1(45201), contact:facebook(45201)"
+    ],
+    "输出文件": "shanghai_buildings_std.geojson",
+    "输出要素数": 45202
+  },
+  {
+    "文件名": "shanghai_poi.geojson",
+    "原始要素数": 2537,
+    "处理记录": [
+      "填充NULL: addr:housename(2534), addr:postcode(2485), addr:street(2003), name(449), addr:city(2195), addr:housenumber(2057), name:de(2522), name:en(1813), name:zh(2244), website(2486), education(2469), name:fr(2533), wheelchair(2375), name:zh-Hant(2467), level(2393), int_name(2535), alt_name(2534), alt_name:zh(2536), phone(2401), wikidata(2497), wikimedia_commons(2528), wikipedia(2508), building(2489), name:zh-Hans(2469), addr:district(2445), addr:province(2469), note(2512), old_name(2523), grades(2517), religion(2533), addr:city_1(2536), description(2505), operator(2520), fee(2535), isced:level(2536), operator:type(2529), check_date(2488), email(2528), barrier(2536), type(2530), healthcare(2372), emergency(2513), source(2511), healthcare:speciality(2529), official_name(2522), official_name:en(2533), old_name:en(2536), old_name:fr(2536), opening_hours(2372), landuse(2534), area(2536), building:levels(2530), beds(2536), short_name:en(2536), short_name:zh(2536), alt_name_1(2536), alt_name_2(2536), wikipedia:zh(2536), smoking(2530), brand(2413), brand:en(2429), brand:wikidata(2418), brand:wikipedia(2501), brand:zh(2429), cuisine(1724), diet:vegan(2526), diet:vegetarian(2532), shop(2532), outdoor_seating(2484), name:ru(2514), name:zh-Latn-pinyin(2532), floor(2536), branch(2530), indoor_seating(2535), toilets:wheelchair(2532), name:ko(2528), takeaway(2523), capacity(2531), name:ja(2516), was:amenity(2533), was:name(2532), delivery(2531), dsscreated(2531), internet_access(2499), internet_access:fee(2535), price(2531), reservation(2529), check_date:opening_hours(2527), drive_in(2534), microbrewery(2535), organic(2536), brand:ja(2520), brand:zh-Hans(2525), brand:zh-Hant(2525), name:el(2536), happy_hours(2536), contact:email(2536), addr:place(2534), was:name:en(2535), was:description:en(2536), internet_access:ssid(2536), diet:halal(2529), was:cuisine(2535), charge(2535), contact:phone(2531), name:zh_pinyin(2535), not:brand:wikidata(2535), description:no(2536), name:it(2536), food(2534), addr:country(2536), brand:zn(2533), diet:local(2526), fixme(2535), toilets(2536), name:ja_rm(2536), restaurant:theme(2536), description:en(2536), beauty(2536), description:pt(2536), name:vi(2536), name:es(2535), contact:instagram(2536), air_conditioning(2535), diet:healthy(2534), self_service(2531), diet:noodle(2536), ref(2536), breakfast(2536), brand:yue(2536), name:yue(2536), addr:full(2518), mobile(2536), diet:chicken(2536), diet:fish(2536), diet:meat(2534), fast_food(2534), roof:levels(2536), roof:shape(2536), heritage:operator(2536), heritage:ref(2536), was:building(2536)"
+    ],
+    "输出文件": "shanghai_poi_std.geojson",
+    "输出要素数": 2537
+  },
+  {
+    "文件名": "shanghai_roads.geojson",
+    "原始要素数": 18814,
+    "处理记录": [
+      "填充NULL: junction(18792), tunnel(18676), access(18589), width(18804)"
+    ],
+    "输出文件": "shanghai_roads_std.geojson",
+    "输出要素数": 18814
+  },
+  {
+    "文件": "shanghai_dem.tif",
+    "输出": "shanghai_dem.tif",
+    "处理": "NoData值统一为-9999"
+  }
+]

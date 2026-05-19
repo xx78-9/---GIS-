@@ -1,0 +1,2432 @@
+[
+  {
+    "文件名": "corrupt_crs.shp",
+    "状态": "读取失败: 'utf-8' codec can't decode byte 0xe4 in position 9: unexpected end of data"
+  },
+  {
+    "文件名": "corrupt_geometry.geojson",
+    "类型": "矢量",
+    "要素数量": 7,
+    "几何类型": [
+      "Polygon"
+    ],
+    "坐标系": "EPSG:4326",
+    "字段列表": [
+      "id",
+      "区名",
+      "类型"
+    ],
+    "NULL统计": {},
+    "空间范围": {
+      "xmin": 121.132,
+      "ymin": 31.0054,
+      "xmax": 121.6,
+      "ymax": 31.3387
+    },
+    "状态": "正常"
+  },
+  {
+    "文件名": "corrupt_nulls.geojson",
+    "类型": "矢量",
+    "要素数量": 20,
+    "几何类型": [
+      "LineString"
+    ],
+    "坐标系": "EPSG:4326",
+    "字段列表": [
+      "id",
+      "road_name",
+      "road_type",
+      "车道数"
+    ],
+    "NULL统计": {
+      "road_name": {
+        "数量": 7,
+        "比例": "35.0%"
+      },
+      "road_type": {
+        "数量": 5,
+        "比例": "25.0%"
+      },
+      "车道数": {
+        "数量": 4,
+        "比例": "20.0%"
+      }
+    },
+    "空间范围": {
+      "xmin": 121.4035,
+      "ymin": 31.1922,
+      "xmax": 121.577,
+      "ymax": 31.3122
+    },
+    "状态": "正常"
+  },
+  {
+    "文件名": "shanghai_buildings.geojson",
+    "类型": "矢量",
+    "要素数量": 45202,
+    "几何类型": [
+      "Point",
+      "Polygon",
+      "MultiPolygon"
+    ],
+    "坐标系": "EPSG:4326",
+    "字段列表": [
+      "building",
+      "name",
+      "name:zh",
+      "name:zh-Hans",
+      "name:zh-Hant",
+      "note",
+      "amenity",
+      "name:en",
+      "addr:housename",
+      "addr:postcode",
+      "addr:street",
+      "network",
+      "public_transport",
+      "railway",
+      "station",
+      "subway",
+      "wheelchair",
+      "addr:housenumber",
+      "building:levels",
+      "heritage",
+      "heritage:operator",
+      "heritage:ref",
+      "old_name",
+      "ref",
+      "addr:country",
+      "ref:zh",
+      "start_date",
+      "addr:city",
+      "addr:province",
+      "description",
+      "military",
+      "source",
+      "tourism",
+      "addr:district",
+      "alt_name:ja",
+      "building:material",
+      "building:use",
+      "check_date",
+      "height",
+      "name:ar",
+      "name:es",
+      "name:fr",
+      "name:hi",
+      "name:ja",
+      "name:ja-Hira",
+      "name:ko",
+      "name:ru",
+      "name:th",
+      "name:vi",
+      "name:wuu",
+      "name:yue",
+      "name:zh-Latn-pinyin",
+      "short_name",
+      "website",
+      "wikidata",
+      "wikimedia_commons",
+      "wikipedia",
+      "brand",
+      "brand:en",
+      "brand:wikidata",
+      "brand:wikipedia",
+      "brand:zh",
+      "historic",
+      "addr:street:en",
+      "built",
+      "use",
+      "landuse",
+      "check_date:opening_hours",
+      "consulate",
+      "country",
+      "diplomatic",
+      "office",
+      "opening_hours:signed",
+      "target",
+      "leisure",
+      "sport",
+      "layer",
+      "maxspeed",
+      "name:de",
+      "train",
+      "architect",
+      "architect:wikidata",
+      "phone",
+      "fee",
+      "opening_hours",
+      "museum",
+      "communication:radio",
+      "communication:television",
+      "man_made",
+      "name:pt",
+      "official_name",
+      "operational_status",
+      "tourism:level:CN",
+      "tower:type",
+      "wikipedia:en",
+      "contact:instagram",
+      "shop",
+      "alt_name:en",
+      "covered",
+      "bridge",
+      "old_name:en",
+      "internet_access",
+      "alt_name",
+      "name:uk",
+      "roof:shape",
+      "smoking",
+      "rooms",
+      "area",
+      "network:en",
+      "network:wikidata",
+      "network:zh",
+      "int_name",
+      "building:colour",
+      "min_height",
+      "roof:colour",
+      "emergency",
+      "healthcare",
+      "roof:levels",
+      "cuisine",
+      "diet:chicken",
+      "diet:fish",
+      "diet:healthy",
+      "diet:local",
+      "diet:meat",
+      "building:levels:underground",
+      "religion",
+      "theatre:type",
+      "denomination",
+      "service_times",
+      "studio",
+      "internet_access:fee",
+      "operator",
+      "contact:bilibili",
+      "contact:phone",
+      "contact:tiktok",
+      "contact:twitter",
+      "contact:weibo",
+      "contact:youtube",
+      "toilets:wheelchair",
+      "website:en",
+      "bus",
+      "image",
+      "name:bn",
+      "name:id",
+      "name:ml",
+      "name:tr",
+      "addr:housename:en",
+      "parking",
+      "source:name",
+      "addr:housenumber:en",
+      "power",
+      "alt_name:zh",
+      "length",
+      "width",
+      "air_conditioning",
+      "stars",
+      "contact:email",
+      "contact:website",
+      "ferry",
+      "museum_type",
+      "toilets",
+      "charge",
+      "name:he",
+      "level",
+      "location",
+      "payment:alipay",
+      "payment:american_express",
+      "payment:apple_pay",
+      "payment:cash",
+      "payment:credit_cards",
+      "payment:discover_card",
+      "payment:huawei_pay",
+      "payment:mastercard",
+      "payment:mipay",
+      "payment:samsung_pay",
+      "payment:unionpay",
+      "payment:visa",
+      "aeroway",
+      "disused",
+      "disused:aeroway",
+      "roof:orientation",
+      "cinema:cinity",
+      "cinema:dolby_atmos",
+      "cinema:dolby_cinema",
+      "cinema:onyx",
+      "cinema:realD",
+      "dsscreated",
+      "screen",
+      "access",
+      "internet_access:ssid",
+      "addr:city:en",
+      "email",
+      "fax",
+      "education",
+      "frequency",
+      "substation",
+      "capacity:disabled",
+      "atm",
+      "community_centre",
+      "government",
+      "construction:leisure",
+      "opening_date",
+      "short_name:en",
+      "construction",
+      "nohousenumber",
+      "roof:direction",
+      "roof:height",
+      "roof:material",
+      "website:zh",
+      "elevator",
+      "colour",
+      "fast_food",
+      "attraction",
+      "female",
+      "male",
+      "toilets:disposal",
+      "theatre",
+      "social_facility",
+      "social_facility:for",
+      "name:yue-Hant",
+      "school",
+      "bench",
+      "shelter_type",
+      "name:it",
+      "name:zh-Hans-CN",
+      "name:zh-Hant-CN",
+      "swimming_pool",
+      "wall",
+      "shop_1",
+      "shop_2",
+      "ele",
+      "wikipedia:zh",
+      "tower",
+      "building:part",
+      "old_name:fr",
+      "source:architect",
+      "source:heritage:ref",
+      "was:building:levels",
+      "boundary",
+      "protect_class",
+      "building:min_level",
+      "relation",
+      "alt_name:de",
+      "alt_name:fr",
+      "alt_name:nl",
+      "name:nl",
+      "fixme",
+      "club",
+      "library",
+      "addr:alley",
+      "drive_through",
+      "bath:open_air",
+      "fuel:octane_92",
+      "fuel:octane_95",
+      "fuel:octane_98",
+      "building:flats",
+      "indoor",
+      "not:name",
+      "building_1",
+      "temporary",
+      "old_name_1",
+      "contact:wechat",
+      "was:building",
+      "generator:source",
+      "addr:suburb",
+      "industrial",
+      "bar",
+      "reservation",
+      "operator:type",
+      "payment:wechat",
+      "abandoned",
+      "bicycle_parking",
+      "operator:en",
+      "operator:zh",
+      "access:covid19",
+      "not:brand:wikidata",
+      "disused:shop",
+      "internet_access:password",
+      "changing_table",
+      "unisex",
+      "ruins",
+      "residential",
+      "university",
+      "townhall:type",
+      "depot",
+      "name:ms",
+      "cinema:3D",
+      "takeaway",
+      "old_name:1952-2018",
+      "was:amenity",
+      "fuel:diesel",
+      "self_service",
+      "information",
+      "outdoor_seating",
+      "service:vehicle:car_repair",
+      "service:vehicle:new_car_sales",
+      "bin",
+      "addr:flats",
+      "second_hand",
+      "addr:unit",
+      "addr:floor",
+      "was:ferry",
+      "was:public_transport",
+      "lit",
+      "admin_level",
+      "construction_date",
+      "voltage",
+      "type",
+      "entrance",
+      "source_1",
+      "contact:facebook"
+    ],
+    "NULL统计": {
+      "name": {
+        "数量": 41972,
+        "比例": "92.9%"
+      },
+      "name:zh": {
+        "数量": 44740,
+        "比例": "99.0%"
+      },
+      "name:zh-Hans": {
+        "数量": 44985,
+        "比例": "99.5%"
+      },
+      "name:zh-Hant": {
+        "数量": 44984,
+        "比例": "99.5%"
+      },
+      "note": {
+        "数量": 45144,
+        "比例": "99.9%"
+      },
+      "amenity": {
+        "数量": 44747,
+        "比例": "99.0%"
+      },
+      "name:en": {
+        "数量": 44470,
+        "比例": "98.4%"
+      },
+      "addr:housename": {
+        "数量": 45190,
+        "比例": "100.0%"
+      },
+      "addr:postcode": {
+        "数量": 45042,
+        "比例": "99.6%"
+      },
+      "addr:street": {
+        "数量": 43774,
+        "比例": "96.8%"
+      },
+      "network": {
+        "数量": 45186,
+        "比例": "100.0%"
+      },
+      "public_transport": {
+        "数量": 45176,
+        "比例": "99.9%"
+      },
+      "railway": {
+        "数量": 45184,
+        "比例": "100.0%"
+      },
+      "station": {
+        "数量": 45185,
+        "比例": "100.0%"
+      },
+      "subway": {
+        "数量": 45185,
+        "比例": "100.0%"
+      },
+      "wheelchair": {
+        "数量": 45134,
+        "比例": "99.8%"
+      },
+      "addr:housenumber": {
+        "数量": 43638,
+        "比例": "96.5%"
+      },
+      "building:levels": {
+        "数量": 41279,
+        "比例": "91.3%"
+      },
+      "heritage": {
+        "数量": 44885,
+        "比例": "99.3%"
+      },
+      "heritage:operator": {
+        "数量": 44916,
+        "比例": "99.4%"
+      },
+      "heritage:ref": {
+        "数量": 44919,
+        "比例": "99.4%"
+      },
+      "old_name": {
+        "数量": 45021,
+        "比例": "99.6%"
+      },
+      "ref": {
+        "数量": 45167,
+        "比例": "99.9%"
+      },
+      "addr:country": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "ref:zh": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "start_date": {
+        "数量": 44920,
+        "比例": "99.4%"
+      },
+      "addr:city": {
+        "数量": 44756,
+        "比例": "99.0%"
+      },
+      "addr:province": {
+        "数量": 44501,
+        "比例": "98.4%"
+      },
+      "description": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "military": {
+        "数量": 45191,
+        "比例": "100.0%"
+      },
+      "source": {
+        "数量": 43326,
+        "比例": "95.8%"
+      },
+      "tourism": {
+        "数量": 45005,
+        "比例": "99.6%"
+      },
+      "addr:district": {
+        "数量": 44482,
+        "比例": "98.4%"
+      },
+      "alt_name:ja": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "building:material": {
+        "数量": 45182,
+        "比例": "100.0%"
+      },
+      "building:use": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "check_date": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "height": {
+        "数量": 44836,
+        "比例": "99.2%"
+      },
+      "name:ar": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "name:es": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "name:fr": {
+        "数量": 45181,
+        "比例": "100.0%"
+      },
+      "name:hi": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "name:ja": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "name:ja-Hira": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "name:ko": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "name:ru": {
+        "数量": 45178,
+        "比例": "99.9%"
+      },
+      "name:th": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "name:vi": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "name:wuu": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:yue": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "name:zh-Latn-pinyin": {
+        "数量": 45188,
+        "比例": "100.0%"
+      },
+      "short_name": {
+        "数量": 45194,
+        "比例": "100.0%"
+      },
+      "website": {
+        "数量": 45153,
+        "比例": "99.9%"
+      },
+      "wikidata": {
+        "数量": 45075,
+        "比例": "99.7%"
+      },
+      "wikimedia_commons": {
+        "数量": 45142,
+        "比例": "99.9%"
+      },
+      "wikipedia": {
+        "数量": 45103,
+        "比例": "99.8%"
+      },
+      "brand": {
+        "数量": 45102,
+        "比例": "99.8%"
+      },
+      "brand:en": {
+        "数量": 45137,
+        "比例": "99.9%"
+      },
+      "brand:wikidata": {
+        "数量": 45115,
+        "比例": "99.8%"
+      },
+      "brand:wikipedia": {
+        "数量": 45169,
+        "比例": "99.9%"
+      },
+      "brand:zh": {
+        "数量": 45137,
+        "比例": "99.9%"
+      },
+      "historic": {
+        "数量": 45179,
+        "比例": "99.9%"
+      },
+      "addr:street:en": {
+        "数量": 45174,
+        "比例": "99.9%"
+      },
+      "built": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "use": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "landuse": {
+        "数量": 45192,
+        "比例": "100.0%"
+      },
+      "check_date:opening_hours": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "consulate": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "country": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "diplomatic": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "office": {
+        "数量": 45025,
+        "比例": "99.6%"
+      },
+      "opening_hours:signed": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "target": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "leisure": {
+        "数量": 45137,
+        "比例": "99.9%"
+      },
+      "sport": {
+        "数量": 45182,
+        "比例": "100.0%"
+      },
+      "layer": {
+        "数量": 44916,
+        "比例": "99.4%"
+      },
+      "maxspeed": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:de": {
+        "数量": 45192,
+        "比例": "100.0%"
+      },
+      "train": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "architect": {
+        "数量": 45195,
+        "比例": "100.0%"
+      },
+      "architect:wikidata": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "phone": {
+        "数量": 45166,
+        "比例": "99.9%"
+      },
+      "fee": {
+        "数量": 45194,
+        "比例": "100.0%"
+      },
+      "opening_hours": {
+        "数量": 45154,
+        "比例": "99.9%"
+      },
+      "museum": {
+        "数量": 45192,
+        "比例": "100.0%"
+      },
+      "communication:radio": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "communication:television": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "man_made": {
+        "数量": 45181,
+        "比例": "100.0%"
+      },
+      "name:pt": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "official_name": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "operational_status": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "tourism:level:CN": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "tower:type": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "wikipedia:en": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "contact:instagram": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "shop": {
+        "数量": 44993,
+        "比例": "99.5%"
+      },
+      "alt_name:en": {
+        "数量": 45194,
+        "比例": "100.0%"
+      },
+      "covered": {
+        "数量": 45185,
+        "比例": "100.0%"
+      },
+      "bridge": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "old_name:en": {
+        "数量": 45191,
+        "比例": "100.0%"
+      },
+      "internet_access": {
+        "数量": 45183,
+        "比例": "100.0%"
+      },
+      "alt_name": {
+        "数量": 45170,
+        "比例": "99.9%"
+      },
+      "name:uk": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "roof:shape": {
+        "数量": 44738,
+        "比例": "99.0%"
+      },
+      "smoking": {
+        "数量": 45166,
+        "比例": "99.9%"
+      },
+      "rooms": {
+        "数量": 45191,
+        "比例": "100.0%"
+      },
+      "area": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "network:en": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "network:wikidata": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "network:zh": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "int_name": {
+        "数量": 45162,
+        "比例": "99.9%"
+      },
+      "building:colour": {
+        "数量": 45109,
+        "比例": "99.8%"
+      },
+      "min_height": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "roof:colour": {
+        "数量": 44803,
+        "比例": "99.1%"
+      },
+      "emergency": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "healthcare": {
+        "数量": 45185,
+        "比例": "100.0%"
+      },
+      "roof:levels": {
+        "数量": 45120,
+        "比例": "99.8%"
+      },
+      "cuisine": {
+        "数量": 45187,
+        "比例": "100.0%"
+      },
+      "diet:chicken": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "diet:fish": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "diet:healthy": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "diet:local": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "diet:meat": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "building:levels:underground": {
+        "数量": 45179,
+        "比例": "99.9%"
+      },
+      "religion": {
+        "数量": 45164,
+        "比例": "99.9%"
+      },
+      "theatre:type": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "denomination": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "service_times": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "studio": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "internet_access:fee": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "operator": {
+        "数量": 45170,
+        "比例": "99.9%"
+      },
+      "contact:bilibili": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "contact:phone": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "contact:tiktok": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "contact:twitter": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "contact:weibo": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "contact:youtube": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "toilets:wheelchair": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "website:en": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "bus": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "image": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "name:bn": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "name:id": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:ml": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:tr": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "addr:housename:en": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "parking": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "source:name": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "addr:housenumber:en": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "power": {
+        "数量": 45191,
+        "比例": "100.0%"
+      },
+      "alt_name:zh": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "length": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "width": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "air_conditioning": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "stars": {
+        "数量": 45190,
+        "比例": "100.0%"
+      },
+      "contact:email": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "contact:website": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "ferry": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "museum_type": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "toilets": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "charge": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:he": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "level": {
+        "数量": 45194,
+        "比例": "100.0%"
+      },
+      "location": {
+        "数量": 45195,
+        "比例": "100.0%"
+      },
+      "payment:alipay": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "payment:american_express": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:apple_pay": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:cash": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:credit_cards": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:discover_card": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:huawei_pay": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:mastercard": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:mipay": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:samsung_pay": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:unionpay": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "payment:visa": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "aeroway": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "disused": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "disused:aeroway": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "roof:orientation": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "cinema:cinity": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "cinema:dolby_atmos": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "cinema:dolby_cinema": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "cinema:onyx": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "cinema:realD": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "dsscreated": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "screen": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "access": {
+        "数量": 45181,
+        "比例": "100.0%"
+      },
+      "internet_access:ssid": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "addr:city:en": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "email": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "fax": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "education": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "frequency": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "substation": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "capacity:disabled": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "atm": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "community_centre": {
+        "数量": 45190,
+        "比例": "100.0%"
+      },
+      "government": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "construction:leisure": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "opening_date": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "short_name:en": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "construction": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "nohousenumber": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "roof:direction": {
+        "数量": 45189,
+        "比例": "100.0%"
+      },
+      "roof:height": {
+        "数量": 45171,
+        "比例": "99.9%"
+      },
+      "roof:material": {
+        "数量": 45194,
+        "比例": "100.0%"
+      },
+      "website:zh": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "elevator": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "colour": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "fast_food": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "attraction": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "female": {
+        "数量": 45193,
+        "比例": "100.0%"
+      },
+      "male": {
+        "数量": 45193,
+        "比例": "100.0%"
+      },
+      "toilets:disposal": {
+        "数量": 45190,
+        "比例": "100.0%"
+      },
+      "theatre": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "social_facility": {
+        "数量": 45195,
+        "比例": "100.0%"
+      },
+      "social_facility:for": {
+        "数量": 45195,
+        "比例": "100.0%"
+      },
+      "name:yue-Hant": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "school": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "bench": {
+        "数量": 45194,
+        "比例": "100.0%"
+      },
+      "shelter_type": {
+        "数量": 45185,
+        "比例": "100.0%"
+      },
+      "name:it": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:zh-Hans-CN": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "name:zh-Hant-CN": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "swimming_pool": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "wall": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "shop_1": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "shop_2": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "ele": {
+        "数量": 45105,
+        "比例": "99.8%"
+      },
+      "wikipedia:zh": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "tower": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "building:part": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "old_name:fr": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "source:architect": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "source:heritage:ref": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "was:building:levels": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "boundary": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "protect_class": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "building:min_level": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "relation": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "alt_name:de": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "alt_name:fr": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "alt_name:nl": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:nl": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "fixme": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "club": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "library": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "addr:alley": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "drive_through": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "bath:open_air": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "fuel:octane_92": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "fuel:octane_95": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "fuel:octane_98": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "building:flats": {
+        "数量": 45184,
+        "比例": "100.0%"
+      },
+      "indoor": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "not:name": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "building_1": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "temporary": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "old_name_1": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "contact:wechat": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "was:building": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "generator:source": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "addr:suburb": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "industrial": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "bar": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "reservation": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "operator:type": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "payment:wechat": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "abandoned": {
+        "数量": 45197,
+        "比例": "100.0%"
+      },
+      "bicycle_parking": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "operator:en": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "operator:zh": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "access:covid19": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "not:brand:wikidata": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "disused:shop": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "internet_access:password": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "changing_table": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "unisex": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "ruins": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "residential": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "university": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "townhall:type": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "depot": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "name:ms": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "cinema:3D": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "takeaway": {
+        "数量": 45199,
+        "比例": "100.0%"
+      },
+      "old_name:1952-2018": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "was:amenity": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "fuel:diesel": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "self_service": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "information": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "outdoor_seating": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "service:vehicle:car_repair": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "service:vehicle:new_car_sales": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "bin": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "addr:flats": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "second_hand": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "addr:unit": {
+        "数量": 45196,
+        "比例": "100.0%"
+      },
+      "addr:floor": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "was:ferry": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "was:public_transport": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "lit": {
+        "数量": 45200,
+        "比例": "100.0%"
+      },
+      "admin_level": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "construction_date": {
+        "数量": 45198,
+        "比例": "100.0%"
+      },
+      "voltage": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "type": {
+        "数量": 44823,
+        "比例": "99.2%"
+      },
+      "entrance": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "source_1": {
+        "数量": 45201,
+        "比例": "100.0%"
+      },
+      "contact:facebook": {
+        "数量": 45201,
+        "比例": "100.0%"
+      }
+    },
+    "空间范围": {
+      "xmin": 121.3983,
+      "ymin": 31.1691,
+      "xmax": 121.5509,
+      "ymax": 31.301
+    },
+    "状态": "正常"
+  },
+  {
+    "文件名": "shanghai_poi.geojson",
+    "类型": "矢量",
+    "要素数量": 2537,
+    "几何类型": [
+      "Point",
+      "Polygon",
+      "MultiPolygon"
+    ],
+    "坐标系": "EPSG:4326",
+    "字段列表": [
+      "addr:housename",
+      "addr:postcode",
+      "addr:street",
+      "amenity",
+      "name",
+      "addr:city",
+      "addr:housenumber",
+      "name:de",
+      "name:en",
+      "name:zh",
+      "website",
+      "education",
+      "name:fr",
+      "wheelchair",
+      "name:zh-Hant",
+      "level",
+      "int_name",
+      "alt_name",
+      "alt_name:zh",
+      "phone",
+      "wikidata",
+      "wikimedia_commons",
+      "wikipedia",
+      "building",
+      "name:zh-Hans",
+      "addr:district",
+      "addr:province",
+      "note",
+      "old_name",
+      "grades",
+      "religion",
+      "addr:city_1",
+      "description",
+      "operator",
+      "fee",
+      "isced:level",
+      "operator:type",
+      "check_date",
+      "email",
+      "barrier",
+      "type",
+      "category",
+      "healthcare",
+      "emergency",
+      "source",
+      "healthcare:speciality",
+      "official_name",
+      "official_name:en",
+      "old_name:en",
+      "old_name:fr",
+      "opening_hours",
+      "landuse",
+      "area",
+      "building:levels",
+      "beds",
+      "short_name:en",
+      "short_name:zh",
+      "alt_name_1",
+      "alt_name_2",
+      "wikipedia:zh",
+      "smoking",
+      "brand",
+      "brand:en",
+      "brand:wikidata",
+      "brand:wikipedia",
+      "brand:zh",
+      "cuisine",
+      "diet:vegan",
+      "diet:vegetarian",
+      "shop",
+      "outdoor_seating",
+      "name:ru",
+      "name:zh-Latn-pinyin",
+      "floor",
+      "branch",
+      "indoor_seating",
+      "toilets:wheelchair",
+      "name:ko",
+      "takeaway",
+      "capacity",
+      "name:ja",
+      "was:amenity",
+      "was:name",
+      "delivery",
+      "dsscreated",
+      "internet_access",
+      "internet_access:fee",
+      "price",
+      "reservation",
+      "check_date:opening_hours",
+      "drive_in",
+      "microbrewery",
+      "organic",
+      "brand:ja",
+      "brand:zh-Hans",
+      "brand:zh-Hant",
+      "name:el",
+      "happy_hours",
+      "contact:email",
+      "addr:place",
+      "was:name:en",
+      "was:description:en",
+      "internet_access:ssid",
+      "diet:halal",
+      "was:cuisine",
+      "charge",
+      "contact:phone",
+      "name:zh_pinyin",
+      "not:brand:wikidata",
+      "description:no",
+      "name:it",
+      "food",
+      "addr:country",
+      "brand:zn",
+      "diet:local",
+      "fixme",
+      "toilets",
+      "name:ja_rm",
+      "restaurant:theme",
+      "description:en",
+      "beauty",
+      "description:pt",
+      "name:vi",
+      "name:es",
+      "contact:instagram",
+      "air_conditioning",
+      "diet:healthy",
+      "self_service",
+      "diet:noodle",
+      "ref",
+      "breakfast",
+      "brand:yue",
+      "name:yue",
+      "addr:full",
+      "mobile",
+      "diet:chicken",
+      "diet:fish",
+      "diet:meat",
+      "fast_food",
+      "roof:levels",
+      "roof:shape",
+      "heritage:operator",
+      "heritage:ref",
+      "was:building"
+    ],
+    "NULL统计": {
+      "addr:housename": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "addr:postcode": {
+        "数量": 2485,
+        "比例": "98.0%"
+      },
+      "addr:street": {
+        "数量": 2003,
+        "比例": "79.0%"
+      },
+      "name": {
+        "数量": 449,
+        "比例": "17.7%"
+      },
+      "addr:city": {
+        "数量": 2195,
+        "比例": "86.5%"
+      },
+      "addr:housenumber": {
+        "数量": 2057,
+        "比例": "81.1%"
+      },
+      "name:de": {
+        "数量": 2522,
+        "比例": "99.4%"
+      },
+      "name:en": {
+        "数量": 1813,
+        "比例": "71.5%"
+      },
+      "name:zh": {
+        "数量": 2244,
+        "比例": "88.5%"
+      },
+      "website": {
+        "数量": 2486,
+        "比例": "98.0%"
+      },
+      "education": {
+        "数量": 2469,
+        "比例": "97.3%"
+      },
+      "name:fr": {
+        "数量": 2533,
+        "比例": "99.8%"
+      },
+      "wheelchair": {
+        "数量": 2375,
+        "比例": "93.6%"
+      },
+      "name:zh-Hant": {
+        "数量": 2467,
+        "比例": "97.2%"
+      },
+      "level": {
+        "数量": 2393,
+        "比例": "94.3%"
+      },
+      "int_name": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "alt_name": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "alt_name:zh": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "phone": {
+        "数量": 2401,
+        "比例": "94.6%"
+      },
+      "wikidata": {
+        "数量": 2497,
+        "比例": "98.4%"
+      },
+      "wikimedia_commons": {
+        "数量": 2528,
+        "比例": "99.6%"
+      },
+      "wikipedia": {
+        "数量": 2508,
+        "比例": "98.9%"
+      },
+      "building": {
+        "数量": 2489,
+        "比例": "98.1%"
+      },
+      "name:zh-Hans": {
+        "数量": 2469,
+        "比例": "97.3%"
+      },
+      "addr:district": {
+        "数量": 2445,
+        "比例": "96.4%"
+      },
+      "addr:province": {
+        "数量": 2469,
+        "比例": "97.3%"
+      },
+      "note": {
+        "数量": 2512,
+        "比例": "99.0%"
+      },
+      "old_name": {
+        "数量": 2523,
+        "比例": "99.4%"
+      },
+      "grades": {
+        "数量": 2517,
+        "比例": "99.2%"
+      },
+      "religion": {
+        "数量": 2533,
+        "比例": "99.8%"
+      },
+      "addr:city_1": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "description": {
+        "数量": 2505,
+        "比例": "98.7%"
+      },
+      "operator": {
+        "数量": 2520,
+        "比例": "99.3%"
+      },
+      "fee": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "isced:level": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "operator:type": {
+        "数量": 2529,
+        "比例": "99.7%"
+      },
+      "check_date": {
+        "数量": 2488,
+        "比例": "98.1%"
+      },
+      "email": {
+        "数量": 2528,
+        "比例": "99.6%"
+      },
+      "barrier": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "type": {
+        "数量": 2530,
+        "比例": "99.7%"
+      },
+      "healthcare": {
+        "数量": 2372,
+        "比例": "93.5%"
+      },
+      "emergency": {
+        "数量": 2513,
+        "比例": "99.1%"
+      },
+      "source": {
+        "数量": 2511,
+        "比例": "99.0%"
+      },
+      "healthcare:speciality": {
+        "数量": 2529,
+        "比例": "99.7%"
+      },
+      "official_name": {
+        "数量": 2522,
+        "比例": "99.4%"
+      },
+      "official_name:en": {
+        "数量": 2533,
+        "比例": "99.8%"
+      },
+      "old_name:en": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "old_name:fr": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "opening_hours": {
+        "数量": 2372,
+        "比例": "93.5%"
+      },
+      "landuse": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "area": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "building:levels": {
+        "数量": 2530,
+        "比例": "99.7%"
+      },
+      "beds": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "short_name:en": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "short_name:zh": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "alt_name_1": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "alt_name_2": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "wikipedia:zh": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "smoking": {
+        "数量": 2530,
+        "比例": "99.7%"
+      },
+      "brand": {
+        "数量": 2413,
+        "比例": "95.1%"
+      },
+      "brand:en": {
+        "数量": 2429,
+        "比例": "95.7%"
+      },
+      "brand:wikidata": {
+        "数量": 2418,
+        "比例": "95.3%"
+      },
+      "brand:wikipedia": {
+        "数量": 2501,
+        "比例": "98.6%"
+      },
+      "brand:zh": {
+        "数量": 2429,
+        "比例": "95.7%"
+      },
+      "cuisine": {
+        "数量": 1724,
+        "比例": "68.0%"
+      },
+      "diet:vegan": {
+        "数量": 2526,
+        "比例": "99.6%"
+      },
+      "diet:vegetarian": {
+        "数量": 2532,
+        "比例": "99.8%"
+      },
+      "shop": {
+        "数量": 2532,
+        "比例": "99.8%"
+      },
+      "outdoor_seating": {
+        "数量": 2484,
+        "比例": "97.9%"
+      },
+      "name:ru": {
+        "数量": 2514,
+        "比例": "99.1%"
+      },
+      "name:zh-Latn-pinyin": {
+        "数量": 2532,
+        "比例": "99.8%"
+      },
+      "floor": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "branch": {
+        "数量": 2530,
+        "比例": "99.7%"
+      },
+      "indoor_seating": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "toilets:wheelchair": {
+        "数量": 2532,
+        "比例": "99.8%"
+      },
+      "name:ko": {
+        "数量": 2528,
+        "比例": "99.6%"
+      },
+      "takeaway": {
+        "数量": 2523,
+        "比例": "99.4%"
+      },
+      "capacity": {
+        "数量": 2531,
+        "比例": "99.8%"
+      },
+      "name:ja": {
+        "数量": 2516,
+        "比例": "99.2%"
+      },
+      "was:amenity": {
+        "数量": 2533,
+        "比例": "99.8%"
+      },
+      "was:name": {
+        "数量": 2532,
+        "比例": "99.8%"
+      },
+      "delivery": {
+        "数量": 2531,
+        "比例": "99.8%"
+      },
+      "dsscreated": {
+        "数量": 2531,
+        "比例": "99.8%"
+      },
+      "internet_access": {
+        "数量": 2499,
+        "比例": "98.5%"
+      },
+      "internet_access:fee": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "price": {
+        "数量": 2531,
+        "比例": "99.8%"
+      },
+      "reservation": {
+        "数量": 2529,
+        "比例": "99.7%"
+      },
+      "check_date:opening_hours": {
+        "数量": 2527,
+        "比例": "99.6%"
+      },
+      "drive_in": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "microbrewery": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "organic": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "brand:ja": {
+        "数量": 2520,
+        "比例": "99.3%"
+      },
+      "brand:zh-Hans": {
+        "数量": 2525,
+        "比例": "99.5%"
+      },
+      "brand:zh-Hant": {
+        "数量": 2525,
+        "比例": "99.5%"
+      },
+      "name:el": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "happy_hours": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "contact:email": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "addr:place": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "was:name:en": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "was:description:en": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "internet_access:ssid": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "diet:halal": {
+        "数量": 2529,
+        "比例": "99.7%"
+      },
+      "was:cuisine": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "charge": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "contact:phone": {
+        "数量": 2531,
+        "比例": "99.8%"
+      },
+      "name:zh_pinyin": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "not:brand:wikidata": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "description:no": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "name:it": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "food": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "addr:country": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "brand:zn": {
+        "数量": 2533,
+        "比例": "99.8%"
+      },
+      "diet:local": {
+        "数量": 2526,
+        "比例": "99.6%"
+      },
+      "fixme": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "toilets": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "name:ja_rm": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "restaurant:theme": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "description:en": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "beauty": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "description:pt": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "name:vi": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "name:es": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "contact:instagram": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "air_conditioning": {
+        "数量": 2535,
+        "比例": "99.9%"
+      },
+      "diet:healthy": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "self_service": {
+        "数量": 2531,
+        "比例": "99.8%"
+      },
+      "diet:noodle": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "ref": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "breakfast": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "brand:yue": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "name:yue": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "addr:full": {
+        "数量": 2518,
+        "比例": "99.3%"
+      },
+      "mobile": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "diet:chicken": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "diet:fish": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "diet:meat": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "fast_food": {
+        "数量": 2534,
+        "比例": "99.9%"
+      },
+      "roof:levels": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "roof:shape": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "heritage:operator": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "heritage:ref": {
+        "数量": 2536,
+        "比例": "100.0%"
+      },
+      "was:building": {
+        "数量": 2536,
+        "比例": "100.0%"
+      }
+    },
+    "空间范围": {
+      "xmin": 121.3982,
+      "ymin": 31.1684,
+      "xmax": 121.5501,
+      "ymax": 31.2997
+    },
+    "状态": "正常"
+  },
+  {
+    "文件名": "shanghai_roads.geojson",
+    "类型": "矢量",
+    "要素数量": 18814,
+    "几何类型": [
+      "LineString"
+    ],
+    "坐标系": "EPSG:4326",
+    "字段列表": [
+      "osmid",
+      "oneway",
+      "reversed",
+      "length",
+      "junction",
+      "tunnel",
+      "access",
+      "width"
+    ],
+    "NULL统计": {
+      "junction": {
+        "数量": 18792,
+        "比例": "99.9%"
+      },
+      "tunnel": {
+        "数量": 18676,
+        "比例": "99.3%"
+      },
+      "access": {
+        "数量": 18589,
+        "比例": "98.8%"
+      },
+      "width": {
+        "数量": 18804,
+        "比例": "99.9%"
+      }
+    },
+    "空间范围": {
+      "xmin": 121.4002,
+      "ymin": 31.1685,
+      "xmax": 121.55,
+      "ymax": 31.301
+    },
+    "状态": "正常"
+  },
+  {
+    "文件名": "shanghai_dem.tif",
+    "类型": "栅格",
+    "尺寸": "3871 x 3434",
+    "波段数": 1,
+    "坐标系": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+    "分辨率": [
+      0.000833,
+      0.000833
+    ],
+    "NoData值": -32768.0,
+    "值域": {
+      "最小值": -62.0,
+      "最大值": 327.0
+    },
+    "状态": "正常"
+  }
+]
