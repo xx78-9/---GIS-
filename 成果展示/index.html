@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>上海城市地理数据治理 - 成果展示</title>
+    <title>上海城市地理数据治理 - 成果展示 (WFS)</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -47,6 +47,11 @@
         .step .name { margin-top: 4px; color: #ccc; }
         .arrow { color: #e94560; display: flex; align-items: center; font-size: 20px; }
 
+        .arch-info {
+            text-align: center; padding: 8px 20px; font-size: 12px; color: #0f0;
+            background: #0a1628; margin: 0 40px; border-radius: 6px;
+        }
+
         .footer { text-align: center; padding: 16px; font-size: 12px; color: #666; }
     </style>
 </head>
@@ -54,7 +59,7 @@
 
 <div class="header">
     <h1>上海城市地理数据治理平台</h1>
-    <p>数据源：OpenStreetMap | 处理引擎：Python geopandas/rasterio/shapely | 坐标系：WGS84</p>
+    <p>数据源: OpenStreetMap | 处理引擎: Python geopandas/rasterio/shapely | 地图服务: GeoServer WFS</p>
 </div>
 
 <div class="dashboard">
@@ -76,89 +81,104 @@
     </div>
 </div>
 
+<div class="arch-info">
+    架构: 浏览器 → GeoServer WFS ← Shapefile 数据 | 企业级 GIS 数据服务模式
+</div>
+
 <div class="map-container">
     <div id="map"></div>
 </div>
 
 <div class="pipeline">
-    <div class="step"><div class="icon">📥</div><div class="name">01 获取数据</div></div>
+    <div class="step"><div class="icon">📥</div><div class="name">01 OSM下载</div></div>
     <div class="arrow">→</div>
     <div class="step"><div class="icon">🔍</div><div class="name">02 摸底检查</div></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="icon">✅</div><div class="name">03 质量检查</div></div>
+    <div class="step"><div class="icon">✅</div><div class="name">03 9条质检</div></div>
     <div class="arrow">→</div>
     <div class="step"><div class="icon">🔧</div><div class="name">04 修复转换</div></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="icon">💾</div><div class="name">05 数据入库</div></div>
+    <div class="step"><div class="icon">🗄️</div><div class="name">05 GeoServer</div></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="icon">📊</div><div class="name">06 生成报告</div></div>
+    <div class="step"><div class="icon">📊</div><div class="name">06 报告生成</div></div>
 </div>
 
 <div class="footer">
-    项目技术栈：Python · geopandas · rasterio · shapely · osmnx · PostGIS · GeoServer · Leaflet &nbsp;|&nbsp;
-    数据版权：OpenStreetMap Contributors &nbsp;|&nbsp;
-    演示项目
+    技术栈: Python | geopandas | rasterio | shapely | osmnx | GeoServer | Leaflet &nbsp;|&nbsp;
+    数据版权: OSM Contributors
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-    // 初始化地图（上海中心）
     const map = L.map('map').setView([31.23, 121.47], 12);
 
-    // 底图
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OSM contributors',
         maxZoom: 18
     }).addTo(map);
 
-    // 加载数据
-    const basePath = '../成果数据/';
+    // GeoServer WFS 服务地址
+    const wfsBase = 'http://localhost:8080/geoserver/shanghai/ows';
+    function wfsUrl(layer) {
+        return wfsBase + '?service=WFS&version=1.0.0&request=GetFeature'
+            + '&typeName=shanghai:' + layer + '&outputFormat=application/json';
+    }
 
     // 颜色
     const roadColor = '#e94560';
     const buildingColor = '#0f3460';
     const poiColors = { '学校': '#e94560', '医院': '#3498db', '餐厅': '#f39c12' };
 
-    // 1. 加载道路
-    fetch(basePath + 'tb_上海道路.geojson')
+    // 用 WFS 1.1.0 + resultType=hits 获取总数
+    function updateCount(id, layerName) {
+        const url = wfsBase + '?service=WFS&version=1.1.0&request=GetFeature'
+            + '&typeName=shanghai:' + layerName + '&resultType=hits';
+        fetch(url)
+            .then(r => r.text())
+            .then(xml => {
+                const m = xml.match(/numberOfFeatures="(\d+)"/);
+                if (m) document.getElementById(id).textContent = Number(m[1]).toLocaleString();
+            })
+            .catch(() => {});
+    }
+
+    // 1. 道路 (WFS)
+    updateCount('count-roads', 'shanghai_roads');
+    fetch(wfsUrl('shanghai_roads'))
         .then(r => r.json())
         .then(data => {
-            document.getElementById('count-roads').textContent =
-                (data.features || []).length.toLocaleString();
             L.geoJSON(data, {
                 style: { color: roadColor, weight: 1.5, opacity: 0.6 },
                 onEachFeature: (f, layer) => {
                     const p = f.properties;
                     layer.bindPopup(
-                        `<b>${p.name || '道路'}</b><br>
-                         类型: ${p.highway || '-'}<br>
-                         长度: ${p.length ? (p.length).toFixed(0) + 'm' : '-'}`
+                        '<b>道路</b><br>'
+                        + 'OSM ID: ' + (p.osmid || '-') + '<br>'
+                        + '长度: ' + (p.length ? p.length.toFixed(0) + 'm' : '-')
                     );
                 }
             }).addTo(map);
-        }).catch(e => console.log('道路加载失败:', e));
+        }).catch(e => console.log('道路 WFS 加载失败:', e));
 
-    // 2. 加载建筑（抽样显示以减少性能压力）
-    fetch(basePath + 'tb_上海建筑.geojson')
+    // 2. 建筑 (WFS, 客户端每50抽1)
+    updateCount('count-buildings', 'shanghai_buildings');
+    fetch(wfsUrl('shanghai_buildings'))
         .then(r => r.json())
         .then(data => {
-            const features = data.features || [];
-            document.getElementById('count-buildings').textContent =
-                features.length.toLocaleString();
-            // 每50个抽一个显示
-            const sampled = { type: 'FeatureCollection',
-                features: features.filter((_, i) => i % 50 === 0) };
-            L.geoJSON(sampled, {
-                style: { color: buildingColor, weight: 0.5, fillOpacity: 0.3 }
+            const feats = (data.features || []).filter((_, i) => i % 50 === 0);
+            L.geoJSON({ type: 'FeatureCollection', features: feats }, {
+                style: { color: buildingColor, weight: 0.5, fillOpacity: 0.3 },
+                onEachFeature: (f, layer) => {
+                    layer.bindPopup('<b>' + (f.properties.name || '建筑') + '</b>');
+                }
             }).addTo(map);
-        }).catch(e => console.log('建筑加载失败:', e));
+        }).catch(e => console.log('建筑 WFS 加载失败:', e));
 
-    // 3. 加载 POI
-    fetch(basePath + 'tb_上海POI.geojson')
+    // 3. POI (WFS)
+    updateCount('count-poi', 'shanghai_poi');
+    fetch(wfsUrl('shanghai_poi'))
         .then(r => r.json())
         .then(data => {
-            document.getElementById('count-poi').textContent =
-                (data.features || []).length.toLocaleString();
             L.geoJSON(data, {
                 pointToLayer: (f, latlng) => {
                     const cat = f.properties.category || '未分类';
@@ -170,13 +190,12 @@
                 onEachFeature: (f, layer) => {
                     const p = f.properties;
                     layer.bindPopup(
-                        `<b>${p.name || '未命名'}</b><br>
-                         类别: ${p.category || '-'}<br>
-                         地址: ${p['addr:street'] || '-'}`
+                        '<b>' + (p.name || '未命名') + '</b><br>'
+                        + '类别: ' + (p.category || '-')
                     );
                 }
             }).addTo(map);
-        }).catch(e => console.log('POI加载失败:', e));
+        }).catch(e => console.log('POI WFS 加载失败:', e));
 
     // 图例
     const legend = L.control({ position: 'bottomright' });
@@ -187,14 +206,13 @@
         div.style.borderRadius = '6px';
         div.style.color = '#333';
         div.style.fontSize = '12px';
-        div.innerHTML = `
-            <b>图例</b><br>
-            <span style="color:${roadColor};">━━</span> 道路<br>
-            <span style="color:${buildingColor};">■</span> 建筑<br>
-            <span style="color:${poiColors.学校};">●</span> 学校
-            <span style="color:${poiColors.医院};">●</span> 医院
-            <span style="color:${poiColors.餐厅};">●</span> 餐厅
-        `;
+        div.innerHTML =
+            '<b>图例</b><br>'
+            + '<span style="color:' + roadColor + ';">━━</span> 道路<br>'
+            + '<span style="color:' + buildingColor + ';">■</span> 建筑<br>'
+            + '<span style="color:' + poiColors['学校'] + ';">●</span> 学校 '
+            + '<span style="color:' + poiColors['医院'] + ';">●</span> 医院 '
+            + '<span style="color:' + poiColors['餐厅'] + ';">●</span> 餐厅';
         return div;
     };
     legend.addTo(map);

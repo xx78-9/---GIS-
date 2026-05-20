@@ -28,7 +28,7 @@ DB_CONFIG = {
     'port': 5432,
     'database': 'gis_practice',
     'user': 'postgres',
-    'password': 'your_password_here'
+    'password': '123456'
 }
 
 TABLE_MAPPING = {
