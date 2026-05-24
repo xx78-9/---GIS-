@@ -9,6 +9,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+os.environ['PROJ_LIB'] = os.path.join(sys.prefix, 'Library', 'share', 'proj')
 
 import geopandas as gpd
 import json

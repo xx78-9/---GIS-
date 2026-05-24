@@ -49,7 +49,7 @@
     "文件名": "shanghai_roads.geojson",
     "原始要素数": 18814,
     "处理记录": [
-      "填充NULL: junction(18792), tunnel(18676), access(18589), width(18804)"
+      "填充NULL: name(3749), ref(18517), lanes(14443), bridge(17851), maxspeed(18190), junction(18792), tunnel(18676), access(18589), width(18804)"
     ],
     "输出文件": "shanghai_roads_std.geojson",
     "输出要素数": 18814

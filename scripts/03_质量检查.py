@@ -7,6 +7,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+os.environ['PROJ_LIB'] = os.path.join(sys.prefix, 'Library', 'share', 'proj')
 
 import geopandas as gpd
 import json
@@ -61,8 +62,11 @@ def check_domain_values(gdf, filename):
         if col == 'geometry' or col not in DOMAIN_RULES:
             continue
         valid_set = set(DOMAIN_RULES[col])
-        actual_vals = gdf[col].dropna().unique()
-        invalid = [v for v in actual_vals if v not in valid_set]
+        try:
+            actual_vals = gdf[col].dropna().unique()
+        except TypeError:
+            continue  # 跳过包含 list/dict/array 的字段
+        invalid = [v for v in actual_vals if isinstance(v, str) and v not in valid_set]
         if invalid:
             results.append({
                 '规则': 'R2-域值检查',
@@ -239,7 +243,7 @@ def check_unique_ids(gdf, filename):
     if id_col is None:
         return [{'规则': 'R8-ID唯一性', '是否通过': True, '说明': '无ID字段'}]
 
-    n_unique = gdf[id_col].dropna().nunique()
+    n_unique = gdf[id_col].dropna().apply(str).nunique()
     n_total = len(gdf)
     has_dupes = n_unique < n_total
     return [{

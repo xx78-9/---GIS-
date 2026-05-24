@@ -1,7 +1,31 @@
 [
   {
-    "文件名": "corrupt_crs.shp",
-    "状态": "读取失败: 'utf-8' codec can't decode byte 0xe4 in position 9: unexpected end of data"
+    "文件名": "corrupt_crs.geojson",
+    "类型": "矢量",
+    "要素数量": 5,
+    "几何类型": [
+      "Point"
+    ],
+    "坐标系": "EPSG:4214",
+    "字段列表": [
+      "id",
+      "name",
+      "建校年代",
+      "面积_m2"
+    ],
+    "NULL统计": {
+      "name": {
+        "数量": 1,
+        "比例": "20.0%"
+      }
+    },
+    "空间范围": {
+      "xmin": 121.218,
+      "ymin": 31.027,
+      "xmax": 121.506,
+      "ymax": 31.298
+    },
+    "状态": "正常"
   },
   {
     "文件名": "corrupt_geometry.geojson",
@@ -18,10 +42,10 @@
     ],
     "NULL统计": {},
     "空间范围": {
-      "xmin": 121.132,
-      "ymin": 31.0054,
+      "xmin": 121.0887,
+      "ymin": 31.0125,
       "xmax": 121.6,
-      "ymax": 31.3387
+      "ymax": 31.3187
     },
     "状态": "正常"
   },
@@ -54,10 +78,10 @@
       }
     },
     "空间范围": {
-      "xmin": 121.4035,
-      "ymin": 31.1922,
-      "xmax": 121.577,
-      "ymax": 31.3122
+      "xmin": 121.4084,
+      "ymin": 31.1716,
+      "xmax": 121.5497,
+      "ymax": 31.3209
     },
     "状态": "正常"
   },
@@ -2378,15 +2402,41 @@
     "坐标系": "EPSG:4326",
     "字段列表": [
       "osmid",
+      "highway",
       "oneway",
       "reversed",
       "length",
+      "name",
+      "ref",
+      "lanes",
+      "bridge",
+      "maxspeed",
       "junction",
       "tunnel",
       "access",
       "width"
     ],
     "NULL统计": {
+      "name": {
+        "数量": 3749,
+        "比例": "19.9%"
+      },
+      "ref": {
+        "数量": 18517,
+        "比例": "98.4%"
+      },
+      "lanes": {
+        "数量": 14443,
+        "比例": "76.8%"
+      },
+      "bridge": {
+        "数量": 17851,
+        "比例": "94.9%"
+      },
+      "maxspeed": {
+        "数量": 18190,
+        "比例": "96.7%"
+      },
       "junction": {
         "数量": 18792,
         "比例": "99.9%"
@@ -2417,7 +2467,7 @@
     "类型": "栅格",
     "尺寸": "3871 x 3434",
     "波段数": 1,
-    "坐标系": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+    "坐标系": "EPSG:4326",
     "分辨率": [
       0.000833,
       0.000833
